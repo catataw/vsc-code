@@ -1,0 +1,55 @@
+   RSA加密算法是1977年由Ron Rivest、Adi Shamirh和LenAdleman在（美国麻省理工学院）开发的。
+RSA取名来自开发他们三者的名字。RSA是目前最有影响力的公钥加密算法，它能够抵抗到目前为
+止已知的所有密码攻击，已被ISO推荐为公钥数据加密标准。RSA算法基于一个十分简单的数论事实：
+将两个大素数相乘十分容易，但那时想要对其乘积进行因式分解却极其困难，因此可以将乘积公开
+作为加密密钥。
+　RSA算法是第一个能同时用于加密和数字签名的算法，也易于理解和操作。RSA的安全性依赖于大
+数的因子分解，但并没有从理论上证明破译RSA的难度与大数分解难度等价。即RSA的重大缺陷是无法
+从理论上把握它的保密性能如何，而且密码学界多数人士倾向于因子分解不是NP问题。 　　
+ 
+  要一对密钥，使用其中一个加密，则需要用另一个才能解密。 　　
+  RSA的算法涉及三个参数，n、e1、e2。 
+  其中，n是两个大质数p、q的积，n的二进制表示时所占用的位数，就是所谓的密钥长度。 　　
+  e1和e2是一对相关的值，e1可以任意取，但要求e1与(p-1)*(q-1)互质；
+  再选择e2，要求(e2*e1)mod((p-1)*(q-1))=1。 　　
+  (n及e1),(n及e2)就是密钥对。RSA加解密的算法完全相同,
+  设A为明文，B为密文，则：A=B^e1 mod n；B=A^e2 mod n； 　　
+  e1和e2可以互换使用，即：A=B^e2 mod n；B=A^e1 mod n;
+
+以上部分内容取自百度百科片段：
+
+    整理者：张堂辉
+	微博：http://weibo.com/yanguer
+	博客：http://blog.sina.com.cn/u/1495182054
+
+生成密钥：
+void rsa_init( rsa_context *ctx, int padding, int hash_id);
+int  rsa_gen_key( rsa_context *ctx, int (*f_rng)(void *),     
+                 void *p_rng,
+                 int nbits, int exponent );
+                 
+公钥操作                 
+int rsa_public( rsa_context *ctx,
+                const unsigned char *input,
+                unsigned char *output )
+
+私钥操作
+int rsa_private( rsa_context *ctx,
+                 const unsigned char *input,
+                 unsigned char *output )
+
+
+这是我们对字符数组zth进行公钥加密和私钥加密后的结果                 
+
+rsa_public op=
+9 f6 71 af c8 8d f3 d5 6e f e0 87 41 71 1 93 d6 ff 89 e9 b4 b4 a6 e0 bc 34 2a 7e 9a 9f 5a 54
+77 93 f3 47 8b 88 25 fd 54 d6 85 cd 43 b8 26 37 6d 21 e7 23 68 de 51 38 70 7 e0 ae c7 5f 65 db
+fb 3 93 9 d 9b 77 1 73 97 5a d4 13 86 6d f0 9a f 89 b1 41 6f 2f ad b7 cf cf 89 15 de ba 27
+61 aa c5 9b a6 c3 f2 c4 96 c0 ca e2 ee 88 46 13 a4 be f8 95 1d 4e d4 20 a1 c6 f6 39 6c 7b 1e 8
+
+
+rsa_private op=
+a 35 50 eb a3 b0 e6 70 cb cf b2 ec 1b a9 e7 2c 41 bf 58 2f c8 52 8e da 76 2c e9 94 9b 29 c7 40
+b4 a 8c 33 21 4 23 4b 9e 8d 99 5c 71 3f 13 bb 33 1 89 e3 26 93 d4 b5 5d cd b f d9 c2 2d 72
+b8 a7 e4 fb d6 d5 2e 34 a2 73 1f d4 3a 82 16 95 14 df 7 d6 67 25 1c 49 69 d8 38 2b 1c 59 10 76
+4 e9 45 b3 46 d5 27 8 4b e2 f 6e f3 ad d1 36 77 7e fb 66 9e 64 86 62 96 82 fe 1d 6f 42 3e d5

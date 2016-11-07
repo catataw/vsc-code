@@ -1,0 +1,15 @@
+﻿生成启动时间为 2016/9/13 10:34:31。
+     1>项目“C:\Users\Administrator\Desktop\VSC++\PSserver\PSserver\PSserver.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\VS2013\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt server.cpp
+         server.cpp
+       Link:
+         D:\VS2013\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Administrator\Desktop\VSC++\PSserver\x64\Release\PSserver.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Administrator\Desktop\VSC++\PSserver\x64\Release\PSserver.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Administrator\Desktop\VSC++\PSserver\x64\Release\PSserver.lib" /MACHINE:X64 x64\Release\server.obj
+         正在生成代码
+         已完成代码的生成
+         PSserver.vcxproj -> C:\Users\Administrator\Desktop\VSC++\PSserver\x64\Release\PSserver.exe
+     1>已完成生成项目“C:\Users\Administrator\Desktop\VSC++\PSserver\PSserver\PSserver.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.67

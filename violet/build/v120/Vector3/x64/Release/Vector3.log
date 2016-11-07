@@ -1,0 +1,13 @@
+﻿生成启动时间为 2016/9/28 17:03:59。
+     1>项目“G:\VSC++\violet\build\v120\Vector3\Vector3.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt ..\..\..\src\Vector3.cpp
+         Vector3.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"..\..\..\bin\v120\Release\x64\Vector3.lib" /NOLOGO /MACHINE:X64 /LTCG x64\Release\Vector3.obj
+         Vector3.vcxproj -> G:\VSC++\violet\build\v120\Vector3\..\..\..\bin\v120\Release\x64\Vector3.lib
+     1>已完成生成项目“G:\VSC++\violet\build\v120\Vector3\Vector3.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.48

@@ -1,0 +1,6 @@
+﻿  TradeLogin.cpp
+c:\users\administrator\desktop\c++项目\简易\managerapi_940\managerapi_940\examples\mt4managerapi.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\administrator\desktop\c++项目\简易\managerapi_940\managerapi_940\examples\mt4managerapi.h(1002): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\administrator\desktop\c++项目\简易\managerapi_940\managerapi_940\examples\tradelogin\tradelogin.cpp(56): warning C4101: “p”: 未引用的局部变量
+  TradeLogin.vcxproj -> C:\Users\Administrator\Desktop\C++项目\简易\ManagerAPI_940\ManagerAPI_940\Examples\TradeLogin\.\Debug\TradeLogin.exe
+  TradeLogin.vcxproj -> .\Debug/TradeLogin.pdb (Full PDB)
