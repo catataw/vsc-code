@@ -1,0 +1,3 @@
+﻿  distortion.cpp
+..\..\src\distortion.cpp(39): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  distortion.vcxproj -> E:\2016Code\software1.3\trunk\distortion\build\../bin/x64\Release\distortion.lib
